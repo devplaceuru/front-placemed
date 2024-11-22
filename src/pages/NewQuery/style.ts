@@ -10,12 +10,8 @@ export const Container = styled.div`
 `;
 
 export const ContentData = styled.div`
-  height: 174px;
-  padding: 16px 20px 0 20px;
-  margin-left: 24px;
-  margin-right: 24px;
-  border-radius: 8px;
-  background-color: ${({ theme }) => theme.COLOR.WHITE};
+  width: 300px;
+  margin-bottom: 18px;
 
   display: flex;
   flex-direction: column;
@@ -24,20 +20,20 @@ export const ContentData = styled.div`
 export const Title = styled.label`
   font-size: ${({ theme }) => theme.FONT_SIZE.MD}px;
   font-weight: 500;
-  margin: 34px 0 50px 32px;
+  margin: 34px 0 50px 25px;
 `;
 
 export const Text = styled.label`
-  font-size: ${({ theme }) => theme.FONT_SIZE.XS};
+  font-size: ${({ theme }) => theme.FONT_SIZE.XS}px;
   font-weight: 400;
   margin-bottom: 8px;
 `;
 
 export const Input = styled.input`
-  width: 300px;
   height: 42px;
   border: none;
   border-radius: 8px;
+  padding: 0 16px;
   background-color: ${({ theme }) => theme.COLOR.WHITE};
 `;
 
@@ -45,9 +41,6 @@ export const BtnNext = styled.button`
   width: 300px;
   height: 58px;
   position: absolute;
-  margin: auto;
-  left: 0;
-  right: 0;
   bottom: 38px;
 
   border: none;

@@ -1,19 +1,20 @@
-import {
-  Container,
-  Image,
-  ContentData,
-  Title,
-  Text,
-  Input,
-  BtnNext,
-} from "./style";
-import Logo from "./../../assets/logo.svg";
+import { Container, ContentData, Title, Text, BtnNext } from "./style";
+
+import { PiMapPin, PiClockAfternoon, PiCaretDown } from "react-icons/pi";
 
 export function ViewQueryResult() {
   return (
     <Container>
       <Title>Consultas Agendadas</Title>
-      <ContentData></ContentData>
+      <ContentData>
+        <Text>Clínico Geral</Text>
+        <Text>Unidade 01</Text>
+        <Text>R. Endereço aqui</Text>
+        <Text>22/11/2024 ás 8:00</Text>
+      </ContentData>
+
+      <Title>Consultas realizadas</Title>
+      <PiCaretDown size={24} />
 
       <BtnNext>Próximo</BtnNext>
     </Container>

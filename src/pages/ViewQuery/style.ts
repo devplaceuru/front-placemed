@@ -26,7 +26,7 @@ export const ContentData = styled.div`
 `;
 
 export const Text = styled.label`
-  font-size: ${({ theme }) => theme.FONT_SIZE.XS};
+  font-size: ${({ theme }) => theme.FONT_SIZE.XS}px;
   font-weight: 400;
   margin-bottom: 8px;
 `;
