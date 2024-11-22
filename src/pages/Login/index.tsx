@@ -1,9 +1,11 @@
-import { Container, ButtomNew } from "./style";
-
+import { Container, Image, BtnNewQuery, BtnViewQuery } from "./style";
+import Logo from "./../../assets/logo.svg";
 export function Login() {
   return (
     <Container>
-      <ButtomNew>Cadastrar</ButtomNew>
+      <Image src={Logo} />
+      <BtnNewQuery>Nova Consulta</BtnNewQuery>
+      <BtnViewQuery>Visualizar Consulta</BtnViewQuery>
     </Container>
   );
 }
