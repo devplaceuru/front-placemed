@@ -1,5 +1,6 @@
 import { Container, Image, BtnNewQuery, BtnViewQuery } from "./style";
 import Logo from "./../../assets/logo.svg";
+
 export function Login() {
   return (
     <Container>

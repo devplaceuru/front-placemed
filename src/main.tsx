@@ -4,12 +4,12 @@ import "./index.css";
 import { ThemeProvider } from "styled-components";
 import theme from "./theme";
 
-import { Login } from "./pages/Login";
+import { ViewQueryResult } from "./pages/ViewQueryResult";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ThemeProvider theme={theme}>
-      <Login />
+      <ViewQueryResult />
     </ThemeProvider>
   </StrictMode>
 );
