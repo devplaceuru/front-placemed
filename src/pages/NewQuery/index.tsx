@@ -8,9 +8,15 @@ import {
   ContentTitle,
 } from "./style";
 
+import Modal from "./../../components/ModalNewQuery";
+import { useState } from "react";
+
 export function NewQuery() {
+  const [openModal, setOpenModal] = useState(false);
+
   return (
     <Container>
+      <Modal isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)} />
       <ContentTitle>
         <Title>Nova Consulta</Title>
       </ContentTitle>
@@ -27,7 +33,11 @@ export function NewQuery() {
 
       <ContentForm>
         <Text>Unidade</Text>
-        <Input type="text" placeholder="Selecione a UBS" />
+        <Input
+          type="text"
+          placeholder="Selecione a UBS"
+          onClick={() => setOpenModal(true)}
+        />
       </ContentForm>
 
       <ContentForm>

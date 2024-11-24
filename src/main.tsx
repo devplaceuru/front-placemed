@@ -4,12 +4,12 @@ import "./index.css";
 import { ThemeProvider } from "styled-components";
 import theme from "./theme";
 
-import { NewQueryScheduled } from "./pages/NewQueryScheduled";
+import { NewQuery } from "./pages/NewQuery";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ThemeProvider theme={theme}>
-      <NewQueryScheduled />
+      <NewQuery />
     </ThemeProvider>
   </StrictMode>
 );
