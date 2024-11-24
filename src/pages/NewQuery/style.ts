@@ -7,9 +7,10 @@ export const Container = styled.div`
 
   display: flex;
   flex-direction: column;
+  align-items: center;
 `;
 
-export const ContentData = styled.div`
+export const ContentForm = styled.div`
   width: 300px;
   margin-bottom: 18px;
 
@@ -17,10 +18,13 @@ export const ContentData = styled.div`
   flex-direction: column;
 `;
 
+export const ContentTitle = styled.div`
+  width: 300px;
+  margin: 34px 0 50px 0;
+`;
 export const Title = styled.label`
   font-size: ${({ theme }) => theme.FONT_SIZE.MD}px;
   font-weight: 500;
-  margin: 34px 0 50px 25px;
 `;
 
 export const Text = styled.label`
@@ -35,6 +39,11 @@ export const Input = styled.input`
   border-radius: 8px;
   padding: 0 16px;
   background-color: ${({ theme }) => theme.COLOR.WHITE};
+
+  &:focus {
+    background-color: ${({ theme }) => theme.COLOR.GRAY_400};
+    outline: none;
+  }
 `;
 
 export const BtnNext = styled.button`

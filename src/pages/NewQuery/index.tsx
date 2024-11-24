@@ -1,39 +1,49 @@
-import { Container, ContentData, Title, Text, Input, BtnNext } from "./style";
+import {
+  Container,
+  ContentForm,
+  Title,
+  Text,
+  Input,
+  BtnNext,
+  ContentTitle,
+} from "./style";
 
 export function NewQuery() {
   return (
     <Container>
-      <Title>Nova Consulta</Title>
+      <ContentTitle>
+        <Title>Nova Consulta</Title>
+      </ContentTitle>
 
-      <ContentData>
+      <ContentForm>
         <Text>Nome</Text>
         <Input type="text" placeholder="Digite seu nome" />
-      </ContentData>
+      </ContentForm>
 
-      <ContentData>
+      <ContentForm>
         <Text>Data</Text>
         <Input type="date" placeholder="00/00/0000" />
-      </ContentData>
+      </ContentForm>
 
-      <ContentData>
+      <ContentForm>
         <Text>Unidade</Text>
         <Input type="text" placeholder="Selecione a UBS" />
-      </ContentData>
+      </ContentForm>
 
-      <ContentData>
+      <ContentForm>
         <Text>Especialidade</Text>
         <Input type="text" placeholder="Selecione a especialidade" />
-      </ContentData>
+      </ContentForm>
 
-      <ContentData>
+      <ContentForm>
         <Text>Médico</Text>
         <Input type="text" placeholder="Selecione o médico" />
-      </ContentData>
+      </ContentForm>
 
-      <ContentData>
+      <ContentForm>
         <Text>Horário</Text>
         <Input type="text" placeholder="Selecione o horário disponível" />
-      </ContentData>
+      </ContentForm>
 
       <BtnNext>Próximo</BtnNext>
     </Container>
