@@ -4,12 +4,12 @@ import "./index.css";
 import { ThemeProvider } from "styled-components";
 import theme from "./theme";
 
-import { NewQuery } from "./pages/NewQuery";
+import App from "./App";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ThemeProvider theme={theme}>
-      <NewQuery />
+      <App />
     </ThemeProvider>
   </StrictMode>
 );

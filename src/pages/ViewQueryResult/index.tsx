@@ -1,4 +1,13 @@
-import { Container, ContentData, Title, Text, BtnNext } from "./style";
+import { Link } from "react-router-dom";
+import {
+  Container,
+  ContentData,
+  Area,
+  Title,
+  Title2,
+  Text,
+  BtnNext,
+} from "./style";
 
 import { PiMapPin, PiClockAfternoon, PiCaretDown } from "react-icons/pi";
 
@@ -13,10 +22,14 @@ export function ViewQueryResult() {
         <Text>22/11/2024 ás 8:00</Text>
       </ContentData>
 
-      <Title>Consultas realizadas</Title>
-      <PiCaretDown size={24} />
+      <Area onClick={() => console.log("clicou!")}>
+        <Title2 color={"red"}>Consultas realizadas</Title2>
+        <PiCaretDown size={24} rotate={80} />
+      </Area>
 
-      <BtnNext>Próximo</BtnNext>
+      <Link to={"/"}>
+        <BtnNext>Próximo</BtnNext>
+      </Link>
     </Container>
   );
 }

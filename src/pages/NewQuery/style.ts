@@ -49,14 +49,12 @@ export const Input = styled.input`
 export const BtnNext = styled.button`
   width: 300px;
   height: 58px;
-  position: absolute;
-  bottom: 38px;
-
+  margin-top: 200px;
   border: none;
   border-radius: 8px;
   color: ${({ theme }) => theme.COLOR.WHITE};
   background-color: ${({ theme }) => theme.COLOR.GRAY_400};
   font-size: ${({ theme }) => theme.FONT_SIZE.MD}px;
   font-weight: 500;
-  box-shadow: 0 4px 10px #000000;
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.5);
 `;

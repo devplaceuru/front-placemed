@@ -1,9 +1,7 @@
+import RoutesApp from "./routes";
+
 function App() {
-  return (
-    <>
-      <h1>PlaceMed!</h1>
-    </>
-  );
+  return <RoutesApp />;
 }
 
 export default App;

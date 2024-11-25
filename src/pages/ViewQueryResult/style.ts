@@ -33,12 +33,21 @@ export const Text = styled.label`
   margin-bottom: 8px;
 `;
 
-export const Input = styled.input`
-  width: 300px;
-  height: 42px;
-  border: none;
-  border-radius: 8px;
-  background-color: ${({ theme }) => theme.COLOR.WHITE};
+export const Area = styled.div`
+  width: 320px;
+  margin-left: 24px;
+  margin-top: 39px;
+  display: flex;
+  justify-content: space-between;
+
+  /* svg {
+    transform: rotate(180deg);
+  } */
+`;
+
+export const Title2 = styled.label`
+  font-size: ${({ theme }) => theme.FONT_SIZE.MD}px;
+  font-weight: 500;
 `;
 
 export const BtnNext = styled.button`
@@ -56,5 +65,5 @@ export const BtnNext = styled.button`
   background-color: ${({ theme }) => theme.COLOR.GRAY_400};
   font-size: ${({ theme }) => theme.FONT_SIZE.MD}px;
   font-weight: 500;
-  box-shadow: 0 4px 10px #000000;
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.5);
 `;

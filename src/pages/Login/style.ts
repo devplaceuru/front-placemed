@@ -27,7 +27,7 @@ export const BtnNewQuery = styled.button`
   background-color: ${({ theme }) => theme.COLOR.BLUE_500};
   font-size: ${({ theme }) => theme.FONT_SIZE.MD}px;
   font-weight: 500;
-  box-shadow: 0 4px 10px #000000;
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.5);
 `;
 
 export const BtnViewQuery = styled.button`
@@ -40,5 +40,5 @@ export const BtnViewQuery = styled.button`
   background-color: ${({ theme }) => theme.COLOR.GRAY_600};
   font-size: ${({ theme }) => theme.FONT_SIZE.MD}px;
   font-weight: 500;
-  box-shadow: 0 4px 10px #000000;
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.5);
 `;
