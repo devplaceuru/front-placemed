@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+interface Props {
+  isOn: boolean;
+}
+
 export const Container = styled.div`
   width: 100vw;
   height: 100vh;
@@ -33,16 +37,16 @@ export const Text = styled.label`
   margin-bottom: 8px;
 `;
 
-export const Area = styled.div`
+export const Area = styled.div<Props>`
   width: 320px;
   margin-left: 24px;
   margin-top: 39px;
   display: flex;
   justify-content: space-between;
 
-  /* svg {
-    transform: rotate(180deg);
-  } */
+  svg {
+    transform: rotate(${(props) => (!props.isOn ? 0 : 180)}deg);
+  }
 `;
 
 export const Title2 = styled.label`
@@ -66,4 +70,5 @@ export const BtnNext = styled.button`
   font-size: ${({ theme }) => theme.FONT_SIZE.MD}px;
   font-weight: 500;
   box-shadow: 0 4px 2px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 `;

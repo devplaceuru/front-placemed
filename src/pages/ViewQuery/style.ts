@@ -36,7 +36,13 @@ export const Input = styled.input`
   height: 42px;
   border: none;
   border-radius: 8px;
+  padding: 0 16px;
   background-color: ${({ theme }) => theme.COLOR.WHITE};
+
+  &:focus {
+    background-color: ${({ theme }) => theme.COLOR.GRAY_400};
+    outline: none;
+  }
 `;
 
 export const BtnNext = styled.button`

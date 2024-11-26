@@ -28,12 +28,14 @@ export const BtnNewQuery = styled.button`
   font-size: ${({ theme }) => theme.FONT_SIZE.MD}px;
   font-weight: 500;
   box-shadow: 0 4px 2px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 `;
 
 export const BtnViewQuery = styled.button`
   width: 300px;
   height: 58px;
 
+  cursor: pointer;
   border: none;
   border-radius: 8px;
   color: ${({ theme }) => theme.COLOR.WHITE};
