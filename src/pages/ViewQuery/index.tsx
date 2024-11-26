@@ -1,5 +1,6 @@
 import { Container, Image, ContentData, Text, Input, BtnNext } from "./style";
 import Logo from "./../../assets/logo.svg";
+import { Link } from "react-router-dom";
 
 export function ViewQuery() {
   return (
@@ -15,7 +16,9 @@ export function ViewQuery() {
         <Input type="text" placeholder="Digite seu nome" />
       </ContentData>
 
-      <BtnNext>Próximo</BtnNext>
+      <Link to={"/viewQueryResult"}>
+        <BtnNext>Próximo</BtnNext>
+      </Link>
     </Container>
   );
 }

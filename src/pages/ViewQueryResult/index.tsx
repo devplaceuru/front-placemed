@@ -3,6 +3,7 @@ import {
   Container,
   ContentData,
   Area,
+  AreaQueryDone,
   Title,
   Title2,
   Text,
@@ -26,9 +27,11 @@ export function ViewQueryResult() {
       </ContentData>
 
       <Area isOn={onQueryDone} onClick={() => setOnQueryDone(!onQueryDone)}>
-        <Title2 color={"red"}>Consultas realizadas</Title2>
+        <Title2>Consultas realizadas</Title2>
         <PiCaretDown size={24} />
       </Area>
+
+      <AreaQueryDone isOn={onQueryDone}></AreaQueryDone>
 
       <Link to={"/"}>
         <BtnNext>Próximo</BtnNext>

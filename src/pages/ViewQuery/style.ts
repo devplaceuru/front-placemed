@@ -48,9 +48,7 @@ export const Input = styled.input`
 export const BtnNext = styled.button`
   width: 300px;
   height: 58px;
-  position: absolute;
-  bottom: 38px;
-
+  margin-top: 370px;
   border: none;
   border-radius: 8px;
   color: ${({ theme }) => theme.COLOR.WHITE};

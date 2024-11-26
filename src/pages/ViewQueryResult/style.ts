@@ -11,9 +11,11 @@ export const Container = styled.div`
 
   display: flex;
   flex-direction: column;
+  align-items: center;
 `;
 
 export const ContentData = styled.div`
+  width: 340px;
   height: 174px;
   padding: 16px 20px 0 20px;
   margin-left: 24px;
@@ -26,9 +28,10 @@ export const ContentData = styled.div`
 `;
 
 export const Title = styled.label`
+  width: 340px;
   font-size: ${({ theme }) => theme.FONT_SIZE.MD}px;
   font-weight: 500;
-  margin: 34px 0 50px 32px;
+  margin: 34px 0 50px 0;
 `;
 
 export const Text = styled.label`
@@ -38,20 +41,29 @@ export const Text = styled.label`
 `;
 
 export const Area = styled.div<Props>`
-  width: 320px;
-  margin-left: 24px;
+  width: 340px;
   margin-top: 39px;
   display: flex;
   justify-content: space-between;
 
   svg {
-    transform: rotate(${(props) => (!props.isOn ? 0 : 180)}deg);
+    transform: rotate(${(props) => (!props.isOn ? 0 : -90)}deg);
+    transition: 0.3s;
   }
 `;
 
 export const Title2 = styled.label`
   font-size: ${({ theme }) => theme.FONT_SIZE.MD}px;
   font-weight: 500;
+`;
+
+export const AreaQueryDone = styled.div<Props>`
+  width: 340px;
+  height: ${(props) => (!props.isOn ? 0 : 440)}px;
+  margin-top: 10px;
+  border: 1px solid black;
+  visibility: ${(props) => (!props.isOn ? "hidden" : "visibility")};
+  transition: 0.3s;
 `;
 
 export const BtnNext = styled.button`
