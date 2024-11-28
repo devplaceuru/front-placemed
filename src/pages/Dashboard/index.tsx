@@ -1,9 +1,10 @@
 import { Container } from "./style";
+import { SideBarUser } from "../../components/SideBarUser";
 
 export function Dashboard() {
   return (
     <Container>
-      <span>Tela Dashboard</span>
+      <SideBarUser />
     </Container>
   );
 }

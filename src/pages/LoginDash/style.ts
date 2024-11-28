@@ -1,11 +1,16 @@
 import styled from "styled-components";
 
+import Fundo from "./../../assets/login_dashboard.jpeg";
+
 export const Container = styled.div`
   width: 100vw;
   height: 100vh;
-  background-color: gray;
   padding-top: 212px;
   padding-left: 140px;
+  background-image: url(${Fundo});
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0;
 `;
 
 export const Content = styled.div`

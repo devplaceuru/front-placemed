@@ -6,7 +6,7 @@ import { ViewConsult } from "./pages/ViewConsult";
 import { ViewConsultConfirm } from "./pages/ViewConsultConfirm";
 import { NewQueryScheduled } from "./pages/NewConsultScheduled";
 
-//import { LoginDash } from "./pages/LoginDash";
+import { LoginDash } from "./pages/LoginDash";
 import { Dashboard } from "./pages/Dashboard";
 import { ResetPassword } from "./pages/ResetPassword";
 
@@ -21,6 +21,7 @@ function RoutesApp() {
         <Route path="/viewConsultConfirm" element={<ViewConsultConfirm />} />
         <Route path="/newQueryScheduled" element={<NewQueryScheduled />} />
 
+        <Route path="/loginDash" element={<LoginDash />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/resetPassword" element={<ResetPassword />} />
       </Routes>
