@@ -8,11 +8,11 @@ import {
   ContentTitle,
 } from "./style";
 
-import Modal from "./../../components/ModalNewQuery";
+import Modal from "../../components/ModalNewQuery";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-export function NewQuery() {
+export function NewConsult() {
   const [openModal, setOpenModal] = useState(false);
 
   return (
@@ -56,7 +56,7 @@ export function NewQuery() {
         <Input type="text" placeholder="Selecione o horário disponível" />
       </ContentForm>
 
-      <Link to={"/viewQueryResult"}>
+      <Link to={"/newQueryScheduled"}>
         <BtnNext>Próximo</BtnNext>
       </Link>
     </Container>

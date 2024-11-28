@@ -2,7 +2,7 @@ import { Container, Image, ContentData, Text, Input, BtnNext } from "./style";
 import Logo from "./../../assets/logo.svg";
 import { Link } from "react-router-dom";
 
-export function ViewQuery() {
+export function ViewConsult() {
   return (
     <Container>
       <Image src={Logo} />
@@ -16,7 +16,7 @@ export function ViewQuery() {
         <Input type="text" placeholder="Digite seu nome" />
       </ContentData>
 
-      <Link to={"/viewQueryResult"}>
+      <Link to={"/viewConsultConfirm"}>
         <BtnNext>Próximo</BtnNext>
       </Link>
     </Container>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Container, BtnHome, Title, Message } from "./style";
 
 export function NewQueryScheduled() {
@@ -9,7 +10,9 @@ export function NewQueryScheduled() {
         selecionada para confirmar sua consulta com pelo menos um dia de
         antecedência. Aguardamos você!
       </Message>
-      <BtnHome>Início</BtnHome>
+      <Link to={"/viewConsultConfirm"}>
+        <BtnHome>Início</BtnHome>
+      </Link>
     </Container>
   );
 }

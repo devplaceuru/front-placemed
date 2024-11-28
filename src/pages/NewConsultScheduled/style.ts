@@ -29,15 +29,13 @@ export const Message = styled.p`
 export const BtnHome = styled.button`
   width: 300px;
   height: 58px;
-  position: absolute;
-  bottom: 38px;
-
+  margin-top: 540px;
   border: none;
   border-radius: 8px;
+  cursor: pointer;
   color: ${({ theme }) => theme.COLOR.WHITE};
   background-color: ${({ theme }) => theme.COLOR.BLUE_500};
   font-size: ${({ theme }) => theme.FONT_SIZE.MD}px;
   font-weight: 500;
-  box-shadow: 0 4px 10px #000000;
-  font-family: "Roboto", cursive;
+  box-shadow: 0 4px 2px rgba(0, 0, 0, 0.5);
 `;

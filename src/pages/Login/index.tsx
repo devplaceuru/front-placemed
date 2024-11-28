@@ -7,11 +7,11 @@ export function Login() {
     <Container>
       <Image src={Logo} />
 
-      <Link to={"/newQuery"}>
+      <Link to={"/newConsult"}>
         <BtnNewQuery>Nova Consulta </BtnNewQuery>
       </Link>
 
-      <Link to={"/viewQuery"}>
+      <Link to={"/viewConsult"}>
         <BtnViewQuery>Visualizar Consulta</BtnViewQuery>
       </Link>
     </Container>
