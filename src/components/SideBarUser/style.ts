@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+interface Props {
+  isActivated: boolean;
+}
+
 export const Container = styled.div`
   width: 264px;
   height: 100vh;
@@ -29,8 +33,9 @@ export const ItemsMenu = styled.ul`
   list-style-type: none;
 `;
 
-export const ItemMenu = styled.li`
+export const ItemMenu = styled.li<Props>`
   color: ${({ theme }) => theme.COLOR.GRAY_200};
+  background-color: ${(props) => (props.isActivated ? "#4B5563" : null)};
   font-size: 18px;
   padding: 9px 0 9px 0;
   cursor: pointer;

@@ -10,6 +10,10 @@ const globalStyle = createGlobalStyle`
         outline: none;
     }
 
+    a {
+        text-decoration: none;
+    }
+
 `;
 
 export default globalStyle;
