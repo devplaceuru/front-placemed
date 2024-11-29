@@ -5,7 +5,7 @@ export default function Agenda() {
   return (
     <Container>
       <SideBarUser />
-      <span>Tela agenda dashboard</span>
+      <span>Tela agenda dashboard.</span>
     </Container>
   );
 }
