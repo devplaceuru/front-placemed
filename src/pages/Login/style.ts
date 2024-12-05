@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Container = styled.div`
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: ${({ theme }) => theme.COLOR.GRAY_200};
 
@@ -16,7 +17,7 @@ export const Image = styled.img`
   margin-top: 24px;
 `;
 
-export const BtnNewQuery = styled.button`
+export const BtnNewQuery = styled(Link)`
   width: 300px;
   height: 58px;
   margin: 154px 45px 30px 45px;
@@ -31,7 +32,7 @@ export const BtnNewQuery = styled.button`
   cursor: pointer;
 `;
 
-export const BtnViewQuery = styled.button`
+export const BtnViewQuery = styled(Link)`
   width: 300px;
   height: 58px;
 
