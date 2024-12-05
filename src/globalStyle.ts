@@ -7,11 +7,15 @@ const globalStyle = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         font-family: "Roboto", sans-serif;
-        outline: none;
+      
     }
 
     a {
         text-decoration: none;
+    }
+
+    :focus{
+        outline: none;
     }
 
 `;
