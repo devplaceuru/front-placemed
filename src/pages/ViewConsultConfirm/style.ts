@@ -91,7 +91,7 @@ export const Area = styled.div<Props>`
   cursor: pointer;
 
   svg {
-    transform: rotate(${(props) => (!props.isOn ? 0 : -90)}deg);
+    transform: rotate(${({ isOn }) => (!isOn ? 0 : -90)}deg);
     transition: 0.3s;
   }
 `;
